@@ -1,12 +1,10 @@
 package org.example.PP_3_1_2_SpringBoot.dao;
 
-
-import jakarta.persistence.EntityManager;
-import jakarta.persistence.PersistenceContext;
 import org.example.PP_3_1_2_SpringBoot.model.User;
 import org.springframework.stereotype.Repository;
 
-
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
 import java.util.List;
 
 @Repository
@@ -17,7 +15,7 @@ public class UserDAOImp implements UserDAO {
 
     @Override
     public List<User> getUserList() {
-        return entityManager.createQuery("from User").getResultList();
+        return entityManager.createQuery("select u from User u", User.class).getResultList();
     }
 
     @Override

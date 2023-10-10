@@ -1,7 +1,5 @@
 package org.example.PP_3_1_2_SpringBoot.service;
 
-
-
 import org.example.PP_3_1_2_SpringBoot.model.User;
 
 import java.util.List;
