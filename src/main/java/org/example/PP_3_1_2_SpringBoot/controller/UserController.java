@@ -1,6 +1,5 @@
 package org.example.PP_3_1_2_SpringBoot.controller;
 
-
 import org.example.PP_3_1_2_SpringBoot.model.User;
 import org.example.PP_3_1_2_SpringBoot.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
